@@ -1,0 +1,153 @@
+/* background */
+.background {
+  height: 100vh;
+  background-image: url(http://shanereact.ibthemespro.com/img/slider/3.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.background .wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.background__content {
+  background-color: transparent;
+  -webkit-transform: translateX(200px);
+          transform: translateX(200px);
+  color: #fff;
+}
+
+.background__content > * {
+  width: 700px;
+}
+
+.background__content__name {
+  font-size: 40px;
+  font-weight: 400;
+  color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #fff;
+}
+
+.background__content__skill ul {
+  list-style: none;
+  height: 80px;
+  overflow: hidden;
+}
+
+.background__content__skill ul li {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 80px;
+  -webkit-animation: slide;
+          animation: slide;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.background__content__from {
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.background__content__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 25px;
+}
+
+.background__content__button a {
+  border: 2px solid #fff;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.background__content__button a i {
+  margin-right: 16px;
+}
+
+.background__content__button a:hover {
+  width: 250px;
+  color: #0c86ee;
+  border-color: #0c86ee;
+  background-color: #fff;
+}
+
+.background__content__button a span {
+  min-width: 200px;
+  display: block;
+}
+
+@-webkit-keyframes disappear {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes disappear {
+  to {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes slide {
+  50% {
+    -webkit-transform: translateY(-80px);
+            transform: translateY(-80px);
+  }
+  100% {
+    -webkit-transform: translateY(-160px);
+            transform: translateY(-160px);
+  }
+}
+
+@keyframes slide {
+  50% {
+    -webkit-transform: translateY(-80px);
+            transform: translateY(-80px);
+  }
+  100% {
+    -webkit-transform: translateY(-160px);
+            transform: translateY(-160px);
+  }
+}
+
+header {
+  z-index: 100;
+}
+
+body {
+  overflow-y: scroll;
+}
+/*# sourceMappingURL=background.css.map */

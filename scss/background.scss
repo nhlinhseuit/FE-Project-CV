@@ -1,0 +1,126 @@
+/* background */
+.background {
+    height: 100vh;
+    background-image: url(http://shanereact.ibthemespro.com/img/slider/3.jpg);
+    background-size: cover;
+    position: relative;
+
+    .wrapper {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+    }
+
+    &__content {
+        background-color: transparent;
+        transform: translateX(200px);
+        color: #fff;
+
+        > * {
+            width: 700px;
+        }
+
+        &__name {
+            font-size: 40px;
+            font-weight: 400;
+            color: transparent;
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: #fff;
+        }
+
+        &__skill {
+            ul {
+                list-style: none;
+                height: 80px;
+                overflow: hidden;
+                li {
+                    font-size: 40px;
+                    font-weight: 800;
+                    line-height: 80px;
+                    animation: slide;
+                    animation-duration: 3s;
+                    animation-iteration-count: infinite;
+                    
+                }
+            }
+        }
+
+        &__from {
+            font-weight: 600;
+            font-size: 30px;
+        }
+
+        &__button {
+            display: flex;
+            margin-top: 25px;
+            
+            a {
+                // the a la inline
+                //fit content khong ăn được transition
+                border: 2px solid #fff;
+                padding: 10px;
+                color: #fff;
+                text-decoration: none;
+                font-size: 18px;
+                font-weight: 500;
+                border-radius: 30px;
+                display: flex;
+                width: 40px;
+                height: 40px;
+                overflow: hidden;
+                align-items: center;
+                transition: all 0.3s;
+                font-weight: 500;
+                margin-right: 10px;
+
+                i {
+                    margin-right: 16px;
+                }
+
+                &:hover {
+                    width: 250px;
+                    color: #0c86ee;
+                    border-color: #0c86ee;
+                    background-color: #fff;
+                }
+
+                span {
+                    min-width: 200px;
+                    display: block;
+                }
+            }
+
+            
+        }
+
+    }
+}
+
+@keyframes disappear {
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes slide {
+    50% {
+        transform: translateY(-80px);
+    }
+
+    100% {
+        transform: translateY(-160px);
+    }
+}
+
+header {
+    z-index: 100;
+}
+
+body {
+    overflow-y: scroll;
+}

@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    /* width: 100%; */
+    left: 0;
+    right: 0;
+    padding: 20px 0;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+header nav li {
+    padding: 0 20px;
+}
+
+
+header nav li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+header .logo h1{
+    font-family: 'Inspiration', cursive;
+    font-size: 60px;
+    color: white;
+}
+
+header nav button {
+    margin-left: 40px;
+    padding: 11px 40px;
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+header nav button:hover {
+    color: #000;
+    background-color: #fff;
+    transform: translateY(-2px);
+    
+}
+
+header li:hover a::after {
+    width: 100%;
+}
+
+header li a::after {
+    /* buoc bat buoc cua after */
+    content: "";
+    height: 2.5px;
+    background: #fff;
+    display: block;
+    width: 0;
+    transition: all 0.3s;
+    margin-top: 0.7px;
+}
+
+
+
+.bars {
+    height: fit-content;
+    display: none;
+}
+
+.bars i {
+    color: #000;
+    font-size: 28px;
+    cursor: pointer;
+
+}
+
+.nav-phone {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    color: #fff;
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+/* coding convention */
+/* SASS/SCSS: Css prepocessor 
+    Nguyên tắc BEM*/
+
+
+/* responsive */
+@media only screen and (max-width:1000px){
+    nav {
+        display: none !important;
+    }
+
+    header {
+        background-color: #fff;
+        position: unset;
+        padding: 5px 0;
+    }
+
+    header .logo h1 {
+        color: #000 !important;
+    }
+
+    .bars  {
+        display: block;
+    }
+}
+
