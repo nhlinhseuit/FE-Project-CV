@@ -148,6 +148,6 @@ header {
 }
 
 body {
-  overflow-y: scroll;
+  overflow-y: hidden;
 }
 /*# sourceMappingURL=background.css.map */
