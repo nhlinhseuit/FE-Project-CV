@@ -73,9 +73,9 @@ header li:hover a::after {
 header li a::after {
     /* buoc bat buoc cua after */
     content: "";
+    display: block;
     height: 2.5px;
     background: #fff;
-    display: block;
     width: 0;
     transition: all 0.3s;
     margin-top: 0.7px;
